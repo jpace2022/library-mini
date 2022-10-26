@@ -1,0 +1,15 @@
+{
+  "name": "libarary-app",
+  "version": "1.0.0",
+  "description": "In this mini-project, you will work with a group to create a library application. You will create routes to get all books, to get a single book, to add a book, and a wildcard route for 404 errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
