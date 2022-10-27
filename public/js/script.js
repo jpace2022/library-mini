@@ -9,7 +9,7 @@ fetch("/api/books").then(res=>{
     return res.json()
 }).then(data=>{
     console.log(data);
-    data.forEach(book => {
+    data.forEach(book=>{
         const bookLi = document.createElement("li");
         bookLi.innerHTML=`<strong>${book.id}.</strong> <em>${book.title}</em> by ${book.author}`;
         booksUl.append(bookLi);
@@ -17,7 +17,7 @@ fetch("/api/books").then(res=>{
 })
 
 
-bookForm.addEventListener("submit", e=>{
+bookForm.addEventListener("submit",e=>{
     e.preventDefault();
     const bookData = {
         id: parseInt(bookIdInput.value),
